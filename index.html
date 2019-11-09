@@ -9,17 +9,17 @@
 </head>
 <body>
 		<header>	
-
 			<div class="main-header">
-				<ul>
-					<li><a href="#" class="main-header__link">Техномарт</a></li>
+				<div class="logo">
+					Техномарт
+				</div>
+				<ul>					
 					<li><a href="#" class="main-header__link">Поиск</a></li>
 					<li><a href="#" class="main-header__link">Закладки:0</a></li>
 					<li><a href="#" class="main-header__link">Корзина:0</a></li>
 					<li><a href="#" class="main-header__link">Оформить заказ</a></li>
 				</ul>
 			</div>
-
 			<div class="container-header">			
 				<div class="user-block">
 					<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -44,10 +44,8 @@
 					</ul>
 				</nav>
 			</div>
-
 		</header>
 		<main>
-
 			<div class="main-description">
 				<ul>
 					<li class="description-block">
@@ -84,35 +82,34 @@
 					</li>
 				</ul>
 			</div>
-
 			<article class="popular">
 				<section class="popular__header">
 					<h2>Популярные товары:</h2>
-					<a href="#">Все популярные товары</a>
+					<a href="#" class="btn">Все популярные товары</a>
 				</section>
 				<article class="popular-items">
-					<div class="popular-items__item">
+					<div class="catalog-items__item catalog-items__item--popular">
 						<img src="img/boschBFG9000.jpg" alt="boschBFG9000" width="218" height="170">
 						<p>Перфоратор BOSCH</p>
 						<p>BFG 9000</p>
 						<p class="old-price">32500 Р.</p>
 						<p class="new-price">25500 Р.</p>
 					</div>
-					<div class="popular-items__item">
+					<div class="catalog-items__item catalog-items__item--popular">
 						<img src="img/boschBFG2000.jpg" alt="boschBFG3000" width="218" height="170">
 						<p>Перфоратор BOSCH</p>
 						<p>BFG 3000</p>
 						<p class="old-price">22500 Р.</p>
 						<p class="new-price">15500 Р.</p>
 					</div>
-					<div class="popular-items__item">
+					<div class="catalog-items__item catalog-items__item--popular ">
 						<img src="img/boschBFG6000.jpg" alt="boschBFG6000" width="218" height="170">
 						<p>Перфоратор BOSCH</p>
 						<p>BFG 6000</p>
 						<p class="old-price">30500 Р.</p>
 						<p class="new-price">25500 Р.</p>
 					</div>
-					<div class="popular-items__item">
+					<div class="catalog-items__item catalog-items__item--popular catalog-items__item--new">
 						<img src="img/boschBFG2000.jpg" alt="boschBFG2000" width="218" height="170">
 						<p>Перфоратор BOSCH</p>
 						<p>BFG 2000</p>
@@ -122,7 +119,7 @@
 				</article>
 				<section class="popular__header">
 					<h2>Популярные производители:</h2>
-					<a href="#">Все производители</a>
+					<a href="#" class="btn">Все производители</a>
 				</section>
 				<article class="popular-items">
 					<div class="popular-items__item">
@@ -192,9 +189,83 @@
 					</div>
 				</article>
 			</article>
+			<article class="about-us">
+				<div class="about-us__item">
+					<div class="about-us__left">
+						<h2>Компания 	&#171;Техномарт&#187;</h2>
+						<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
+					</div>
+					<div class="about-us__right">
+						<h2>Контакты</h2>
+						<p>Вы можете забрать товар сами, заехав в наш офис:</p>
+					</div>
+				</div>
+				<div class="about-us__item">
+					<div class="about-us__left">
+						<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+						<ul>
+							<li>Деловые линии</li>
+							<li>Автотрейдинг</li>
+							<li>ЖелДорЭкспедиция</li>
+						</ul>
+						<a href="#" class="btn">Подробнее о компании</a>
+					</div>					
+					<div class="about-us__right">
+						<img src="img/contacts-map.png" alt="map">
+						<a href="#" class="btn">Заблудились? Напишите нам!</a>
+					</div>
+				</div>
+			</article>
 		</main>
 		<footer>
-			
+			<div class="container-header">
+				<div class="main-footer">
+					<div class="logo">
+						Техномарт
+					</div>
+					<nav class="footer-navigation">
+						<ul>
+							<li><a href="#" class="footer-navigation__link">Компания</a></li>
+							<li><a href="#" class="footer-navigation__link">Новости</a></li>
+							<li><a href="#" class="footer-navigation__link">Каталог</a></li>					
+							<li><a href="#" class="footer-navigation__link">Доставка</a></li>
+							<li><a href="#" class="footer-navigation__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-navigation">
+					<div class="footer-navigation__adress">						
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8 +7 (812) 555-05-55</p>
+					</div>
+					<ul class="second-navigation">
+						<li><a href="#" class="footer-navigation__link second-navigation__link">Материалы</a></li>
+						<li><a href="#" class="footer-navigation__link second-navigation__link">Техника</a></li>
+						<li><a href="#" class="footer-navigation__link second-navigation__link">Инструмент</a></li>
+						<li><a href="#" class="footer-navigation__link second-navigation__link">Спецпредложения</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container-footer">			
+				<div class="copy">
+					<p>&#169; 2010-2015 Компания &#171;Техномарт&#187;</p>
+					<p>Все права защищены</p>
+				</div>
+				<div class="social-media">
+					<a href="#" class="social-media__link">vk</a>
+					<a href="#" class="social-media__link">facebook</a>
+					<a href="#" class="social-media__link">twitter</a>
+				</div>
+				<div class="mailto-research">
+					<div class="mailto">
+						<p>Обратная связь:</p>
+						<a href="#" class="mailto__link">mail@htmlacademy.ru</a>
+					</div>
+					<div class="research">
+						<p>Разработано:</p>
+						<a href="#" class="mailto__link">htmlacademy.ru</a>
+					</div>
+				</div>
+			</div>				
 		</footer>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
