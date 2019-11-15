@@ -44,7 +44,7 @@
 		</div>
 	</header>
 	<main>
-		<h1>Главная страница интернет-магазина &#171;Техномарт&#187;</h1>
+		<h1 class="visually-hidden">Главная страница интернет-магазина &#171;Техномарт&#187;</h1>
 		<section class="main-description">
 			<h2>Основное описание и преимущества работы магазина Техномарт</h2>
 			<div class="main-description__item main-description__item--materials">
@@ -242,9 +242,9 @@
 		<div class="container container--footer">			
 			<p class="copy">&#169; 2010-2015 Компания &#171;Техномарт&#187;<br>Все права защищены</p>			
 			<ul class="social-media">
-				<li><a href="#" class="social-media__link">vk</a></li>
-				<li><a href="#" class="social-media__link">facebook</a></li>
-				<li><a href="#" class="social-media__link">twitter</a></li>
+				<li><a href="#" class="social-media__link" aria-label="Техномарт во Вконтакте"></a></li>
+				<li><a href="#" class="social-media__link" aria-label="Техномарт в facebook"></a></li>
+				<li><a href="#" class="social-media__link" aria-label="Техномарт в twitter"></a></li>
 			</ul>
 				<p class="mailto-research">Обратная связь:<br><a href="mailto:mail@htmlacademy.ru" class="mailto-research__link">mail@htmlacademy.ru</a></p>
 				<p class="mailto-research">Разработано:<br><a href="https://htmlacademy.ru/intensive/htmlcss" class="mailto-research__link">htmlacademy.ru</a></p>
@@ -254,22 +254,28 @@
 		<h2>Написать нам</h2>
 		<button class="btn-close" type="button" title="close">Закрыть</button>
 		<form action="https://echo.htmlacademy.ru/" method="post" class="popup-write__form popup">
-			<label class="popup__lable">Ваше имя:<br>
-				<input type="text" class="popup__input" name="login" placeholder="Имя Фамилия">
-			</label>
-			<label class="popup__lable">Ваш e-mail:<br>
-				<input type="email" class="popup__input" name="email" placeholder="email@example.com">	
-			</label>
-			<label class="popup__lable">Текст письма:<br>
-				<textarea class="popup__input" name="comment" rows="5"  placeholder="В свободной форме"></textarea>
-			</label>
+			<p>
+				<label class="popup__lable">Ваше имя:
+					<input type="text" class="popup__input" name="login" placeholder="Имя Фамилия">
+				</label>
+			</p>
+			<p>
+				<label class="popup__lable">Ваш e-mail:
+					<input type="email" class="popup__input" name="email" placeholder="email@example.com">	
+				</label>
+			</p>
+			<p>
+				<label class="popup__lable">Текст письма:
+					<textarea class="popup__input" name="comment" rows="5"  placeholder="В свободной форме"></textarea>
+				</label>
+			</p>
 			<button class="btn btn--popup" type="submit">Отправить</button>
 		</form>
 	</section>
 	<section class="popup-map">
-		<h2>Карта проезда</h2>
+		<h2 class="visually-hidden">Карта проезда</h2>
 		<button class="btn-close" type="button" title="close">Закрыть</button>
-		<img src="img/contacts-map-full.png" alt="Полная карта проезда в компанию Техномарт" width="940" height="446">
+		<img src="img/contacts-map-full.png" alt="Полная карта проезда в компанию Техномарт по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8" width="940" height="446">
 	</section>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -61,60 +61,49 @@
 					<div class="form-filter__filter">
 						<h2>Фильтр:</h2>
 					</div>
-					<form class="catalog-form">
+					<form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
 						<fieldset  class="catalog-form__price">
 							<legend>Цена:</legend>
-								<div class="form-range">
-									<button class="form-range" type="button" id="range__min"></button>
-									<button class="form-range" type="button" id="range__max"></button>
-								</div>
-							<label>											
-								<input type="text" value="0">
-							</label>				
-							<label>
-								<input type="text" value="30000">
-							</label>
+							<div class="form-range">
+								<button class="form-range" type="button" id="range-min"></button>
+								<button class="form-range" type="button" id="range-max"></button>
+							</div>
+							<p>
+								<label class="visually-hidden">Минимальная цена товара в фильтре		
+									<input type="text" value="0" id="range-field-min">
+								</label>				
+								<label class="visually-hidden">Максимальная цена товара в фильтре
+									<input type="text" value="30000" id="range-field-max">
+								</label>
+							</p>
 						</fieldset>							
 						<fieldset class="catalog__features">
 							<legend>Производители:</legend>
-							<label class="catalog-label">
-								<input class="catalog__checkbox" type="checkbox" name="grid__item--checkbox1" value="1" id="checkbox-1" checked>
-								Bosch
-								<span class="checkbox--style"></span>
-							</label>
-							<label class="catalog-label">
-								<input class="catalog__checkbox" type="checkbox" name="grid__item--checkbox2" value="2" id="checkbox-2">
-								Интерскол
-								<span class="checkbox--style"></span>
-							</label>
-							<label class="catalog-label">
-								<input class="catalog__checkbox" type="checkbox" name="grid__item--checkbox3" value="3" id="checkbox-3" checked>
-								Makita
-								<span class="checkbox--style"></span>
-							</label>
-							<label class="catalog-label">
-								<input class="catalog__checkbox" type="checkbox" name="grid__item--checkbox4" value="2" id="checkbox-4">
-								Dewalt
-								<span class="checkbox--style"></span>
-							</label>			
-							<label class="catalog-label">
-								<input class="catalog__checkbox" type="checkbox" name="grid__item--checkbox5" value="2" id="checkbox-5" disabled checked>
-								Hitachi
-								<span class="checkbox--style"></span>
-							</label>			
+							<ul class="catalog__checkboxes">
+								<li><input class="catalog__checkbox" type="checkbox" name="grid__item--checkbox1" value="1" id="checkbox-1" checked></li>
+								<li><input class="catalog__checkbox" type="checkbox" name="grid__item--checkbox2" value="2" id="checkbox-2"></li>
+								<li><input class="catalog__checkbox" type="checkbox" name="grid__item--checkbox3" value="3" id="checkbox-3" checked></li>
+								<li><input class="catalog__checkbox" type="checkbox" name="grid__item--checkbox4" value="2" id="checkbox-4"></li>
+								<li><input class="catalog__checkbox" type="checkbox" name="grid__item--checkbox5" value="2" id="checkbox-5"></li>
+							</ul>
+							<ul class="catalog__labels">
+								<li><label class="catalog-label" for="checkbox-1">Bosch<label class="catalog-label"></li>
+								<li><label class="catalog-label" for="checkbox-2">Интерскол</label></li>
+								<li><label class="catalog-label" for="checkbox-3">Makita</label></li>
+								<li><label class="catalog-label" for="checkbox-4">Dewalt</label></li>
+								<li><label class="catalog-label" for="checkbox-5">Hitachi</label></li>
+							</ul>
 						</fieldset>	
 						<fieldset class="catalog__grid">
 							<legend>Питание:</legend>
-							<label class="catalog-label">
-								<input class="catalog__radio" type="radio" name="grid__item" value="1" id="radio-1" checked>
-								Аккумуляторные
-								<span class="radio--style"></span>
-							</label>
-							<label class="catalog-label">
-								<input class="catalog__radio" type="radio" name="grid__item" value="2" id="radio-2">
-								Сетевые
-								<span class="radio--style"></span>
-							</label>
+							<ul class="catalog__checkboxes">
+								<li><input class="catalog__radio" type="radio" name="grid__item" value="1" id="radio-1" checked></li>
+								<li><input class="catalog__radio" type="radio" name="grid__item" value="2" id="radio-2"></li>
+							</ul>
+							<ul class="catalog__label--radio">
+								<li><label class="catalog-label" for="radio-1">Аккумуляторные</label></li>
+								<li><label class="catalog-label" for="radio-2">Сетевые</label></li>
+							</ul>
 						</fieldset>	
 						<button class="btn btn--catalog" type="submit">Показать</button>
 					</form>		
@@ -271,9 +260,9 @@
 		<div class="container container--footer">			
 			<p class="copy">&#169; 2010-2015 Компания &#171;Техномарт&#187;<br>Все права защищены</p>			
 			<ul class="social-media">
-				<li><a href="#" class="social-media__link">vk</a></li>
-				<li><a href="#" class="social-media__link">facebook</a></li>
-				<li><a href="#" class="social-media__link">twitter</a></li>
+				<li><a href="#" class="social-media__link" aria-label="Техномарт во Вконтакте"></a></li>
+				<li><a href="#" class="social-media__link" aria-label="Техномарт в facebook"></a></li>
+				<li><a href="#" class="social-media__link" aria-label="Техномарт в twitter"></a></li>
 			</ul>
 				<p class="mailto-research">Обратная связь:<br><a href="mailto:mail@htmlacademy.ru" class="mailto-research__link">mail@htmlacademy.ru</a></p>
 				<p class="mailto-research">Разработано:<br><a href="https://htmlacademy.ru/intensive/htmlcss" class="mailto-research__link">htmlacademy.ru</a></p>
