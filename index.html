@@ -12,7 +12,12 @@
 	<header>	
 		<div class="main-header">
 			<a class="logo" aria-label="Логотип компании Техномарт"><img src="img/logo.jpg" alt="Логотип компании Техномарт"></a>
-			<input type="search" placeholder="Поиск:">
+			<form action="https://echo.htmlacademy.ru/" method="get" class="popup-search__form search">
+				<label class="visually-hidden">Поиск по сайту:
+					<input placeholder="Поиск:">
+				</label>
+				<button type="submit"></button>
+			</form>
 			<a href="#" class="main-header__link">Закладки:<span class="mark-value">0</span></a>
 			<a href="#" class="main-header__link">Корзина:<span class="cart-value">0</span></a>
 			<a href="#" class="main-header__link">Оформить заказ</a>
@@ -47,24 +52,24 @@
 		<h1 class="visually-hidden">Главная страница интернет-магазина &#171;Техномарт&#187;</h1>
 		<section class="main-description">
 			<h2>Основное описание и преимущества работы магазина Техномарт</h2>
-			<div class="main-description__item main-description__item--materials">
-				<h3>Материалы</h3>
+			<div class="main-description__item main-description__item--materials label-new">
+				<p>Материалы</p>
 				<a href="#">На любой вкус</a>
 			</div>
 			<div class="main-description__item main-description__item--instrument">
-				<h3>Инструмент</h3>
+				<p>Инструмент</p>
 				<a href="#">На все случаи</a>
 			</div>
 			<div class="main-description__item main-description__item--technic">
-				<h3>Техника</h3>
+				<p>Техника</p>
 				<a href="#">Для стройки</a>
 			</div>
 			<div class="main-description__item main-description__item--discount">
-				<h3>Скидки 50%</h3>
+				<p>Скидки 50%</p>
 				<a href="#">На 350 товаров</a>
 			</div>
 			<div class="main-description__item main-description__item--delivery">
-				<h3>Доставка</h3>
+				<p>Доставка</p>
 				<a href="#">Бесплатно</a>
 			</div>
 			<div class="description-slider">
@@ -118,7 +123,7 @@
 					<p class="catalog-items__old-price">30500 Р.</p>
 					<p class="catalog-items__new-price">25500 Р.</p>
 				</li>
-				<li class="catalog-items__item catalog-items__item--new">
+				<li class="catalog-items__item label-new">
 					<div class="catalog-items__header">
 						<img src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
 						<a href="#">Купить</a>

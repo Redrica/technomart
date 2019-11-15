@@ -11,9 +11,14 @@
 	<header>	
 		<div class="main-header">
 			<a href="index.html" class="logo" aria-label="Ссылка на главную страницу сайта"><img src="img/logo.jpg" alt="Логотип компании Техномарт"></a>
-			<input type="search" placeholder="Поиск:">
+			<form action="https://echo.htmlacademy.ru/" method="get" class="popup-search__form search">
+				<label class="visually-hidden">Поиск по сайту:
+					<input placeholder="Поиск:">
+				</label>
+				<button type="submit"></button>
+			</form>
 			<a href="#" class="main-header__link">Закладки:<span class="mark__value">0</span></a>
-			<a href="#" class="main-header__link">Корзина:<span class="cart__value">0</span></a>
+			<a href="#" class="main-header__link">Корзина:<span class="cart__value">10</span></a>
 			<a href="#" class="main-header__link">Оформить заказ</a>
 		</div>
 		<div class="container-header">			
@@ -25,10 +30,10 @@
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8
 				</address>
 				<div class="user-menu">
-					<a href="#" class="btn user-menu__sign-out">Равшан Джамшутович</button>
+					<a href="#" class="btn user-menu__sign-out" aria-label="Выход из аккаунта">Равшан Джамшутович</a>
 					<ul class="user-login">
-						<li><a href="#" class="user-login__link">Войти</a></li>
-						<li><a href="#" class="user-login__link">Регистрация</a></li>
+						<li><a href="#" class="user-login__link">Мои заказы</a></li>
+						<li><a href="#" class="user-login__link">Личный кабинет</a></li>
 					</ul>
 				</div>
 			</div>
@@ -139,7 +144,7 @@
 								<p class="old-price">30500 Р.</p>
 								<p class="new-price">25500 Р.</p>
 							</li>
-							<li class="catalog-items__item  catalog-items__item--new">
+							<li class="catalog-items__item  label-new">
 								<div class="catalog-items__header">
 									<img src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
 									<a href="#">Купить</a>
@@ -159,7 +164,7 @@
 								<p class="old-price">22500 Р.</p>
 								<p class="new-price">15500 Р.</p>
 							</li>
-							<li class="catalog-items__item   catalog-items__item--new">
+							<li class="catalog-items__item   label-new">
 								<div class="catalog-items__header">
 									<img src="img/boschBFG6000.jpg" alt="перфоратор bosch модель BFG6000" width="218" height="170">
 									<a href="#">Купить</a>
@@ -179,7 +184,7 @@
 								<p class="old-price"> </p>
 								<p class="new-price">25500 Р.</p>
 							</li>
-							<li class="catalog-items__item   catalog-items__item--new">
+							<li class="catalog-items__item   label-new">
 								<div class="catalog-items__header">
 									<img src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG3000" width="218" height="170">
 									<a href="#">Купить</a>
