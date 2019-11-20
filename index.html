@@ -19,7 +19,7 @@
 				</form>
 				<a href="#" class="main-header__link">Закладки:<span class="mark-value">0</span></a>
 				<a href="#" class="main-header__link">Корзина:<span class="cart-value">0</span></a>
-				<a href="#" class="main-header__link">Оформить заказ</a>
+				<a href="#" class="main-header__link main-header__link--second">Оформить заказ</a>
 			</div>
 		</div>
 		<div class="footer-header">
@@ -54,26 +54,28 @@
 		<h1 class="visually-hidden">Главная страница интернет-магазина &#171;Техномарт&#187;</h1>
 		<section class="main-description">
 			<h2 class="visually-hidden">Основное описание и преимущества работы магазина Техномарт</h2>
-			<div class="main-description__item fast-description fast-description--materials label-new">
-				<p>Материалы</p>
-				<a href="#">На любой вкус</a>
-			</div>
-			<div class="main-description__item fast-description fast-description--instrument">
-				<p>Инструмент</p>
-				<a href="#">На все случаи</a>
-			</div>
-			<div class="main-description__item fast-description fast-description--technic">
-				<p>Техника</p>
-				<a href="#">Для стройки</a>
-			</div>
-			<div class="main-description__item fast-description fast-description--cart">
-				<p>Скидки 50%</p>
-				<a href="#">На 350 товаров</a>
-			</div>
-			<div class="main-description__item fast-description fast-description--delivery">
-				<p>Доставка</p>
-				<a href="#">Бесплатно</a>
-			</div>
+			<ul>
+				<li class="main-description__item fast-description fast-description--materials label-new">
+					<p>Материалы</p>
+					<a href="#" class="fast-description__link">На любой вкус</a>
+				</li>
+				<li class="main-description__item fast-description fast-description--instrument">
+					<p>Инструмент</p>
+					<a href="#" class="fast-description__link">На все случаи</a>
+				</li>
+				<li class="main-description__item fast-description fast-description--technic">
+					<p>Техника</p>
+					<a href="#" class="fast-description__link">Для стройки</a>
+				</li>
+				<li class="main-description__item fast-description fast-description--cart">
+					<p>Скидки 50%</p>
+					<a href="#" class="fast-description__link">На 350 товаров</a>
+				</li>
+				<li class="main-description__item fast-description fast-description--delivery">
+					<p>Доставка</p>
+					<a href="#" class="fast-description__link">Бесплатно</a>
+				</li>
+			</ul>
 			<div class="description-slider">
 				<div class="description-slider__slider">
 					<b>Дрели</b>
@@ -98,7 +100,7 @@
 				<li class="catalog-items__item shop-item">
 					<div class="shop-item__header">
 						<img src="img/boschBFG9000.jpg" alt="перфоратор bosch модель BFG9000" width="218" height="170">
-						<a href="#" class="btn">Купить</a>
+						<a href="#" class="btn btn--shop-item">Купить</a>
 						<button class="btn btn--empty" type="button" title="mark">В закладки</button>
 					</div>					
 					<h3><a href="#" class="shop-item__link">Перфоратор BOSCH BFG 9000</a></h3>
@@ -108,7 +110,7 @@
 				<li class="catalog-items__item shop-item">
 					<div class="catalog-items__header">
 						<img src="img/boschBFG2000.jpg" alt=" перфоратор bosch модель BFG3000" width="218" height="170">
-						<a href="#" class="btn">Купить</a>
+						<a href="#" class="btn btn--shop-item">Купить</a>
 						<button class="btn btn--empty" type="button" title="mark">В закладки</button>
 					</div>
 					<h3><a href="#" class="shop-item__link">Перфоратор BOSCH BFG 3000</a></h3>
@@ -118,17 +120,17 @@
 				<li class="catalog-items__item shop-item">
 					<div class="catalog-items__header">
 						<img src="img/boschBFG6000.jpg" alt="перфоратор bosch модель BFG6000" width="218" height="170">
-						<a href="#" class="btn">Купить</a>
+						<a href="#" class="btn btn--shop-item">Купить</a>
 						<button class="btn btn--empty" type="button" title="mark">В закладки</button>
 					</div>					
 					<h3><a href="#" class="shop-item__link">Перфоратор BOSCH BFG 6000</a></h3>
 					<p class="shop-item__old-price">30500 Р.</p>
 					<p class="shop-item__new-price">25500 Р.</p>
 				</li>
-				<li class="catalog-items__item  shop-item label-new">
-					<div class="catalog-items__header">
+				<li class="catalog-items__item  shop-item">
+					<div class="catalog-items__header label-new">
 						<img src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
-						<a href="#" class="btn">Купить</a>
+						<a href="#" class="btn btn--shop-item">Купить</a>
 						<button class="btn btn--empty" type="button" title="mark">В закладки</button>
 					</div>
 					<h3><a href="#" class="shop-item__link">Перфоратор BOSCH BFG 2000</a></h3>
@@ -143,28 +145,28 @@
 				<a href="#" class="btn">Все производители</a>
 			</header>
 			<ul class="catalog-items">
-				<li class="catalog-items__item">
+				<li class="catalog-items__item catalog-items__item--brand">
 					<a href="#"><img src="img/bosch.jpg" alt="логотип компании bosch" width="126" height="37"></a>
 				</li>
-				<li class="catalog-items__item">
+				<li class="catalog-items__item catalog-items__item--brand">
 					<a href="#"><img src="img/makita.jpg" alt="логотип компании makita" width="123" height="40"></a>
 				</li>
-				<li class="catalog-items__item">
+				<li class="catalog-items__item catalog-items__item--brand">
 					<a href="#"><img src="img/dewalt.jpg" alt="логотип компании dewalt" width="146" height="44"></a>
 				</li>
-				<li class="catalog-items__item">
+				<li class="catalog-items__item catalog-items__item--brand">
 					<a href="#"><img src="img/interscol.jpg" alt="логотип компании интерскол" width="184" height="32"></a>
 				</li>
-				<li class="catalog-items__item">
+				<li class="catalog-items__item catalog-items__item--brand">
 					<a href="#"><img src="img/hitachi.jpg" alt="логотип компании hitachi" width="169" height="31"></a>
 				</li>
-				<li class="catalog-items__item">
+				<li class="catalog-items__item catalog-items__item--brand">
 					<a href="#"><img src="img/lg.jpg" alt="логотип компании lg" width="121" height="73"></a>
 				</li>
-				<li class="catalog-items__item">
+				<li class="catalog-items__item catalog-items__item--brand">
 					<a href="#"><img src="img/aeg.jpg" alt="логотип компании aeg" width="151" height="96"></a>
 				</li>
-				<li class="catalog-items__item">
+				<li class="catalog-items__item catalog-items__item--brand">
 					<a href="#"><img src="img/metabo.jpg" alt="логотип компании metabo" width="204" height="69"></a>
 				</li>
 			</ul>
@@ -174,9 +176,9 @@
 			<p class="main-p">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.</p>
 			<div class="services__slider main-slider">
 				<ul class="slider-buttons">
-					<li><button type="button" class="slider-buttons__link" disabled>Доставка</button></li>
-					<li><button type="button" class="slider-buttons__link">Гарантия</button></li>
-					<li><button type="button" class="slider-buttons__link">Кредит</button></li>
+					<li><button type="button" class="slider-buttons__item" disabled>Доставка</button></li>
+					<li><button type="button" class="slider-buttons__item">Гарантия</button></li>
+					<li><button type="button" class="slider-buttons__item">Кредит</button></li>
 				</ul>				
 				<div class="slider-item slider-item__first">	
 					<div class="slider-item__description">
