@@ -86,30 +86,40 @@
 						</fieldset>							
 						<fieldset class="catalog-form__fieldset">
 							<legend>Производители:</legend>
-							<ul class="checkboxes visually-hidden">
-								<li><input class="checkboxes__item" type="checkbox" name="grid__item--checkbox1" value="1" id="checkbox-1" checked></li>
-								<li><input class="checkboxes__item" type="checkbox" name="grid__item--checkbox2" value="2" id="checkbox-2"></li>
-								<li><input class="checkboxes__item" type="checkbox" name="grid__item--checkbox3" value="3" id="checkbox-3" checked></li>
-								<li><input class="checkboxes__item" type="checkbox" name="grid__item--checkbox4" value="2" id="checkbox-4"></li>
-								<li><input class="checkboxes__item" type="checkbox" name="grid__item--checkbox5" value="2" id="checkbox-5"></li>
-							</ul>
-							<ul class="labels">
-								<li><label class="labels__item" for="checkbox-1">Bosch</label></li>
-								<li><label class="labels__item" for="checkbox-2">Интерскол</label></li>
-								<li><label class="labels__item" for="checkbox-3">Makita</label></li>
-								<li><label class="labels__item" for="checkbox-4">Dewalt</label></li>
-								<li><label class="labels__item" for="checkbox-5">Hitachi</label></li>
+							<ul class="checkboxes">
+								<li class="checkboxes__list-item">									
+									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox1" value="1" id="checkbox-1" checked>
+									<label for="checkbox-1">Bosch</label>
+								</li>
+								<li class="checkboxes__list-item">									
+									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox2" value="2" id="checkbox-2">
+									<label for="checkbox-2">Интерскол</label>
+								</li>
+								<li class="checkboxes__list-item">									
+									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox3" value="3" id="checkbox-3" checked disabled>
+									<label for="checkbox-3">Makita</label>
+								</li>
+								<li class="checkboxes__list-item">									
+									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox4" value="2" id="checkbox-4">
+									<label for="checkbox-4">Dewalt</label>
+								</li>
+								<li class="checkboxes__list-item">									
+									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox5" value="2" id="checkbox-5">
+									<label for="checkbox-5">Hitachi</label>
+								</li>
 							</ul>
 						</fieldset>	
 						<fieldset class="catalog-form__fieldset">
 							<legend>Питание:</legend>
-							<ul class="radio-checkboxes visually-hidden">
-								<li><input class="radio-checkboxes__item" type="radio" name="grid__item" value="1" id="radio-1" checked></li>
-								<li><input class="radio-checkboxes__item" type="radio" name="grid__item" value="2" id="radio-2"></li>
-							</ul>
-							<ul class="radio-checkboxes-label">
-								<li><label class="radio-checkboxes-label__item" for="radio-1">Аккумуляторные</label></li>
-								<li><label class="radio-checkboxes-label__item" for="radio-2">Сетевые</label></li>
+							<ul class="radio-checkboxes">
+								<li class="radio-checkboxes__list-item">								
+									<input class="radio-checkboxes__item visually-hidden" type="radio" name="grid__item" value="1" id="radio-1" checked>
+									<label for="radio-1">Аккумуляторные</label>
+								</li>
+								<li class="radio-checkboxes__list-item">									
+									<input class="radio-checkboxes__item visually-hidden" type="radio" name="grid__item" value="2" id="radio-2" disabled>
+									<label for="radio-2">Сетевые</label>
+								</li>
 							</ul>
 						</fieldset>
 						<button class="btn--catalog" type="submit">Показать</button>
@@ -122,7 +132,7 @@
 							<li><a class="control-panel__item control-panel__item--checked">По цене</a></li>
 							<li><a href="#" class="control-panel__item">По типу</a></li>
 							<li><a href="#" class="control-panel__item">По функционалу</a></li>
-							<li><a href="#" class="control-panel__direction" aria-label="сортировка по возрастанию"></a></li>
+							<li><a class="control-panel__direction control-panel__item--checked" aria-label="сортировка по возрастанию"></a></li>
 							<li><a href="#" class="control-panel__direction" aria-label="сортировка по убыванию"></a></li>
 						</ul>						
 					</div>
@@ -221,11 +231,11 @@
 						</ul>
 					</div>
 					<ul class="catalog__pages">
-						<li><a href="#" class="btn--catalog btn--pages btn--hide">Предыдущая</button></li>
-						<li><a href="#" class="btn--catalog btn--num btn--disabled">1</button></li>
-						<li><a href="#" class="btn--catalog btn--num">2</button></li>
-						<li><a href="#" class="btn--catalog btn--num">3</button></li>
-						<li><a href="#" class="btn--catalog btn--pages">Следующая</button></li>			
+						<li><a class="btn--catalog btn--pages btn--hide">Предыдущая</a></li>
+						<li><a class="btn--catalog btn--num btn--disabled">1</a></li>
+						<li><a href="#" class="btn--catalog btn--num">2</a></li>
+						<li><a href="#" class="btn--catalog btn--num">3</a></li>
+						<li><a href="#" class="btn--catalog btn--pages">Следующая</a></li>			
 					</ul>
 				</section>
 			</div>	

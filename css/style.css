@@ -15,10 +15,11 @@ footer ul,
 .about ul,
 .breadcrumbs,
 .labels,
-.radio-checkboxes-label,
 .control-panel__sort-items,
 .catalog-items,
-.catalog__pages {
+.catalog__pages,
+.checkboxes,
+.radio-checkboxes {
 	list-style: none;
 }
 .main-header__link{
@@ -70,11 +71,6 @@ input[type="search"]:focus {
 }
 .user-block__link:hover {
 	color: #ee3643;
-}
-.user-block__link:active,
-.user-menu__sign-out:active {
-	color: black;
-	opacity: 0.3;
 }
 .user-block__adress {	
 	font-size: 14px;
@@ -188,12 +184,14 @@ input[type="search"]:focus {
 }
 .btn--shop-item {
 	background-color: #63a63e;
+	border-bottom: 3px solid #367315;
 }
 .btn--shop-item:hover {
  background-color: #5fbb2d;
 }
 .btn--shop-item:active {
 	background-color: #518534;
+	border-color: #518534;
 }
 .btn--empty {
 	background-color: white;
@@ -208,6 +206,14 @@ input[type="search"]:focus {
 	border-color: #32425c;
 	background-color: white;
 	opacity: 0.3;
+}
+.user-block__link:active,
+.user-menu__sign-out:active {
+	color: black;
+	opacity: 0.3;
+}
+.user-menu__sign-out:hover {
+	background-color: white;
 }
 .popular {
 	Font-family: "Cuprum", "Arial", sans-serif;
@@ -396,6 +402,13 @@ background-color: #ee3643;
 	line-height: 18px;
 	color: #32425c;
 }
+.user-login__link:hover {
+	color: #ee3643;
+}
+.user-login__link:active {
+	color: #32425c;
+	opacity: 0.3;
+}
 .user-menu__sign-out {
 	Font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 21px;
@@ -464,8 +477,14 @@ input[type="number"] {
 	color: black;
 	text-decoration: none;
 	text-transform: uppercase;
+	border: 1px solid #e5e5e5;
 }
-.control-panel a,
+.btn--catalog:hover {
+	border-color: #bdc6ca;
+}
+.btn--catalog:active {
+	border-color: #ee3643;
+}
 .control-panel h2 {
 	Font-family: "PT Sans", "Arial", sans-serif;	
 	font-size: 13px;
@@ -475,18 +494,47 @@ input[type="number"] {
 	font-weight: 400;
 	background-color: #f7f3ec;
 }
-.control-panel .control-panel__item--checked {
-	color: #ee3643;
+.control-panel {
+		background-color: #f7f3ec;
 }
 .control-panel__item {
+	Font-family: "PT Sans", "Arial", sans-serif;	
+	font-size: 13px;
+	line-height: 13px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 400;
 	text-decoration-style: dotted;
 	text-decoration-color: #ee3643;
+	opacity: 0.3;
 }
 .btn__hide {
 	display:none;
 }
 .btn--disabled {
 	background-color: #ee3643;
+}
+.btn--hide {
+	display: none;
+}
+.control-panel__direction {
+	border:3px solid rgba(0,0,0,0.3);
+}
+.control-panel__item:hover,
+.control-panel__direction:hover {
+	opacity: 1;
+	border-color: rgba(0,0,0,1);
+}
+.control-panel__item:hover {
+	text-decoration-style: solid;
+}
+.control-panel__item:active,
+.control-panel__direction:active,
+.control-panel__item--checked {
+	color: #ee3643;
+	border-color: rgba(238, 54, 67, 1);
+	opacity: 1;
+	text-decoration: none;
 }
 .about-description{
 	Font-family: "PT Sans", "Arial", sans-serif;	
@@ -508,4 +556,57 @@ input[type="number"] {
 .btn--close {
 	background-color: white;
 	color: black;
+}
+.checkboxes__list-item  label,
+.radio-checkboxes__list-item label {
+	cursor: pointer;
+	position: relative;
+}
+.checkboxes__item + label::before {
+	cursor: pointer;
+	content: "";
+	width:27px;
+	height:23px;
+	position: absolute;
+	left:-34px;
+	top:0px;
+	background: url("../img/svg/checkbox-off.svg") no-repeat;
+}
+.checkboxes__item:checked + label::before{
+	background: url("../img/svg/checkbox-on.svg") no-repeat;
+}
+.checkboxes__item:checked:hover:not(:disabled) + label::before {
+	background: url("../img/svg/checkbox-on-hover.svg") no-repeat;
+}
+.checkboxes__item:disabled + label{
+	opacity: 0.6;
+}
+.checkboxes__item:hover:not(:disabled) + label::before {
+	background: url("../img/svg/checkbox-off-hover.svg") no-repeat;
+}
+
+
+
+
+.radio-checkboxes__item + label::before {
+	cursor: pointer;
+	content: "";
+	width:25px;
+	height:25px;
+	position: absolute;
+	left:-34px;
+	top:0px;
+	background: url("../img/svg/radio-off.svg") no-repeat;
+}
+.radio-checkboxes__item:checked + label::before {
+	background: url("../img/svg/radio-on.svg") no-repeat;
+}
+.radio-checkboxes__item:checked:hover:not(:disabled) + label::before {
+	background: url("../img/svg/radio-on-hover.svg") no-repeat;
+}
+.radio-checkboxes__item:disabled + label{
+	opacity: 0.6;
+}
+.radio-checkboxes__item:hover:not(:disabled) + label::before {
+	background: url("../img/svg/radio-off-hover.svg") no-repeat;
 }
