@@ -1,4 +1,7 @@
-﻿.visually-hidden {
+﻿body {
+	Font-family: "Cuprum", "Arial", sans-serif;
+}
+.visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -10,9 +13,9 @@
 }
 header ul,
 footer ul,
-.popular ul,
-.services ul,
-.about ul,
+.popular .catalog-items,
+.slider-buttons,
+.about-us__list,
 .breadcrumbs,
 .labels,
 .control-panel__sort-items,
@@ -21,6 +24,9 @@ footer ul,
 .checkboxes,
 .radio-checkboxes {
 	list-style: none;
+}
+.main-header {
+	background-color: #293449;
 }
 .main-header__link{
 	font-family: "Cuprum", "Arial", sans-serif;
@@ -53,18 +59,15 @@ input[type="search"]:hover,
  .main-header__link:hover {
 	background-color: #212a3a;
 }
-.main-header__link--second:hover {
-background-color: #5fbb2d;
-}
-.main-header__link:active {
-	background-color: #161d29;
-}
-.main-header__link--second:active {
-	background-color: #518534;
-}
 input[type="search"]:focus {
 	color: black;
 	background-color: white;
+}
+.logo {
+	display: inline-block;
+	background-color: #ee3643;
+	box-shadow: 0px 5px 0px 0px #b52933;
+	margin-bottom: 20px;
 }
 .user-block {
 	font-family: "Cuprum", "Arial", sans-serif;
@@ -72,26 +75,22 @@ input[type="search"]:focus {
 .user-block__link:hover {
 	color: #ee3643;
 }
-.user-block__adress {	
+.user-block__address {	
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
 	font-style:normal;
 }
-.user-block__adress a{
-	font-size: 21px;
-	line-height: 21px;
-	color: #ee3643;
-	background-color:  #f3f7f9;
-	border:3px solid white;
-	text-decoration: none;
-}
-.user-block p {
+.user-block__text {
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
 	font-style: italic;
 	background-color: #f3f7f9;
+}
+.navigation {
+	background-color: #32425c;
 }
 .navigation__link {
 	font-family: "Cuprum", "Arial", sans-serif;
@@ -99,21 +98,40 @@ input[type="search"]:focus {
 	line-height: 17px;
 	color:white;
 	background-color: #32425c;
+	border-bottom: 5px solid #293449;
 	text-decoration: none;
 }
 .navigation__link:hover {
 	background-color: #293449;
+	border-bottom: 5px solid #293449;
 }
 .navigation__link:active {
 	background-color: #1d2739;
+	border-bottom: 5px solid #1d2739;
+}
+.user-block__phone {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 21px;
+	line-height: 21px;
+	color: #e9292a;
+	background-color: #f1f5f7;
+	border:3px solid white;
+	text-decoration: none;
 }
 .user-block__link {
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 21px;
 	line-height: 21px;
 	color: black;
 	background-color: white;
 	border:3px solid white;
 	text-decoration: none;
+}
+.description-slider__slider1 {
+	background: url("../img/slider-img2.jpg")no-repeat black;
+}
+.description-slider__slider2 {
+	background: url("../img/slider-img1.jpg")no-repeat black;
 }
 .main-description {
 	font-family: "Cuprum", "Arial", sans-serif;
@@ -123,12 +141,12 @@ input[type="search"]:focus {
 	width: 295px;
 	height: 123px;
 }
-.main-description__item p{
+.fast-description__text{
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
 }
-.fast-description__link{file:///C:/Users/-R-/Desktop/sites/technomart-training/index.html#
+.fast-description__link{
 	font-size: 14px;
 	line-height: 18px;
 	text-decoration: none;
@@ -157,11 +175,11 @@ input[type="search"]:focus {
 .fast-description--delivery {
 	background: url("../img/svg/icon-5.svg")no-repeat #ffc047;
 }
-.description-slider b {
+.description-slider__title {
 	font-size: 36px;
 	line-height: 36px;
 }
-.description-slider p {
+.description-slider__text {
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -215,10 +233,21 @@ input[type="search"]:focus {
 .user-menu__sign-out:hover {
 	background-color: white;
 }
+.main-header__link--second:hover,
+.btn--close:hover {
+background-color: #5fbb2d;
+}
+.main-header__link:active {
+	background-color: #161d29;
+}
+.main-header__link--second:active,
+.btn--close:active {
+	background-color: #518534;
+}
 .popular {
 	Font-family: "Cuprum", "Arial", sans-serif;
 }
-.popular__header h2 {
+.popular__header__title {
 	color: #32425c;
 	font-size: 30px;
 	line-height: 30px;
@@ -250,6 +279,7 @@ input[type="search"]:focus {
 	border: 1px solid #e5e5e5;
 }
 .shop-item__link {
+	Font-family: "PT Sans", "Arial", sans-serif;	
 	color: black;
 	font-size: 18px;
 	line-height: 20px;
@@ -275,6 +305,15 @@ input[type="search"]:focus {
 	Font-family: "Cuprum", "Arial", sans-serif;
 	color: black;
 }
+.slider-item__first {
+	background: url("../img/services-slider-img1.png")no-repeat;
+}
+.slider-item__second {
+	background: url("../img/services-slider-img2.png")no-repeat;
+}
+.slider-item__third {
+	background: url("../img/services-slider-img3.png")no-repeat;
+}
 .main-h {
 	font-size: 30px;
 	line-height: 30px;
@@ -293,15 +332,15 @@ input[type="search"]:focus {
 	font-weight: bold;
 	border: none;
 }
-.slider-buttons__item button[type="button"]:disabled {
+.slider-buttons__item:disabled {
 	color: black;
 	background-color: white;
 	cursor: default;
 }
-.slider-buttons__item:hover {
+.slider-buttons__item:hover:not(:disabled) {
 	background-color: #293449;
 }
-.slider-item__description h3 {
+.slider-item__description__title {
 	font-size: 36px;
 	line-height: 36px;
 	text-transform: uppercase;
@@ -313,7 +352,7 @@ input[type="search"]:focus {
 	color: black;
 }
 .navigation-footer__link,
-.main-footer__adress {
+.main-footer__address {
 	Font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -336,10 +375,10 @@ input[type="search"]:focus {
 	text-decoration: none;
 	opacity: 0.5;
 }
-.main-footer__adress {
+.main-footer__address {
  font-style: normal;
 }
-.main-footer__adress a {
+.main-footer__address__phone {
 	color: #f1f5f7;
 	text-decoration: none;
 }
@@ -402,12 +441,21 @@ background-color: #ee3643;
 	line-height: 18px;
 	color: #32425c;
 }
-.user-login__link:hover {
+.user-login__link:hover,
+.breadcrumbs__link:hover {
 	color: #ee3643;
 }
-.user-login__link:active {
+.breadcrumbs__link--last:hover {
+	color: black;
+}
+.user-login__link:active,
+.breadcrumbs__link:active{
 	color: #32425c;
 	opacity: 0.3;
+}
+.breadcrumbs__link--last:active {
+	color: black;
+	opacity: 1;
 }
 .user-menu__sign-out {
 	Font-family: "Cuprum", "Arial", sans-serif;
@@ -435,12 +483,15 @@ background-color: #ee3643;
 	background-color: #f2f6f8;
 	font-weight: 400;
 }
-.form-filter__filter h2 {
+.form-filter__filter--header,
+.control-panel--header {
 	Font-family: "PT Sans", "Arial", sans-serif;	
 	font-size: 13px;
 	line-height: 18px;
+	text-transform: uppercase;
 	color: black;
 	background-color: #f7f3ec;
+	font-weight: 400;
 }
 input[type="number"] {
 	background-color: #f7f3ec;
@@ -452,7 +503,7 @@ input[type="number"] {
 .catalog-header--about {
 	color: black;
 }
-.catalog-form__fieldset legend {
+.catalog-form__legend {
 	Font-family: "PT Sans", "Arial", sans-serif;	
 	font-size: 17px;
 	line-height: 30px;
@@ -484,15 +535,6 @@ input[type="number"] {
 }
 .btn--catalog:active {
 	border-color: #ee3643;
-}
-.control-panel h2 {
-	Font-family: "PT Sans", "Arial", sans-serif;	
-	font-size: 13px;
-	line-height: 18px;
-	color: black;
-	text-transform: uppercase;
-	font-weight: 400;
-	background-color: #f7f3ec;
 }
 .control-panel {
 		background-color: #f7f3ec;
@@ -544,7 +586,7 @@ input[type="number"] {
 	text-transform: none;
 	background-color: #f2f6f8;
 }
-.cart p {
+.cart__text {
 	Font-family: "Cuprum", "Arial", sans-serif;
 	color: black;
 	font-size: 30px;
@@ -557,8 +599,13 @@ input[type="number"] {
 	background-color: white;
 	color: black;
 }
-.checkboxes__list-item  label,
-.radio-checkboxes__list-item label {
+.checkboxes__label,
+.radio-checkboxes__label {
+	Font-family: "PT Sans", "Arial", sans-serif;
+	color: black;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
 	cursor: pointer;
 	position: relative;
 }
@@ -584,10 +631,6 @@ input[type="number"] {
 .checkboxes__item:hover:not(:disabled) + label::before {
 	background: url("../img/svg/checkbox-off-hover.svg") no-repeat;
 }
-
-
-
-
 .radio-checkboxes__item + label::before {
 	cursor: pointer;
 	content: "";

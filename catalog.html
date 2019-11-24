@@ -13,7 +13,7 @@
 	<header>	
 		<div class="main-header">
 			<div class="container">
-				<a class="logo" aria-label="Логотип компании Техномарт"><img src="img/logo.png" alt="Логотип компании Техномарт"></a>
+				<a href="index.html" class="logo" aria-label="Логотип компании Техномарт"><img src="img/svg/tech_logo.svg" alt="Логотип компании Техномарт"></a>
 				<form action="https://echo.htmlacademy.ru/" method="get" class="search">
 					<label for="search" class="visually-hidden">Поиск по сайту:</label>
 					<input  type="search" placeholder="Поиск:" id="search">				
@@ -26,9 +26,9 @@
 		<div class="footer-header">
 			<div class="container container-column">			
 				<div class="user-block">
-					<p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
-					<address class="user-block__adress">
-						<a href="tel:+78125550555">
+					<p class="user-block__text">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
+					<address class="user-block__address">
+						<a href="tel:+78125550555"  class="user-block__phone">
 						+7 (812) 555-05-55</a><br>
 						г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8
 					</address>
@@ -60,17 +60,17 @@
 				<li><a href="index.html" class="breadcrumbs__link" aria-label="Ссылка на главную страницу"></a></li>
 				<li><a href="#" class="breadcrumbs__link">Каталог</a></li>
 				<li><a href="#" class="breadcrumbs__link">Инструмент</a></li>
-				<li><a class="breadcrumbs__link">Перфораторы</a></li>
+				<li><a class="breadcrumbs__link breadcrumbs__link--last">Перфораторы</a></li>
 			</ul>
 			<h1  class="catalog-header">Перфораторы</h1>
 			<div class="form-container">
 				<section class="form-filter">				
 					<div class="form-filter__filter">
-						<h2>Фильтр:</h2>
+						<h2 class="form-filter__filter--header">Фильтр:</h2>
 					</div>
 					<form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
 						<fieldset  class="catalog-form__fieldset">
-							<legend>Цена:</legend>
+							<legend class="catalog-form__legend">Цена:</legend>
 							<div class="range-container">
 								<div class="form-range">
 									<button class="form-range__button" type="button" id="range-min"></button>
@@ -87,40 +87,40 @@
 							</p>
 						</fieldset>							
 						<fieldset class="catalog-form__fieldset">
-							<legend>Производители:</legend>
+							<legend class="catalog-form__legend">Производители:</legend>
 							<ul class="checkboxes">
 								<li class="checkboxes__list-item">									
 									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox1" value="1" id="checkbox-1" checked>
-									<label for="checkbox-1">Bosch</label>
+									<label class="checkboxes__label" for="checkbox-1">Bosch</label>
 								</li>
 								<li class="checkboxes__list-item">									
 									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox2" value="2" id="checkbox-2">
-									<label for="checkbox-2">Интерскол</label>
+									<label class="checkboxes__label" for="checkbox-2">Интерскол</label>
 								</li>
 								<li class="checkboxes__list-item">									
-									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox3" value="3" id="checkbox-3" checked disabled>
-									<label for="checkbox-3">Makita</label>
+									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox3" value="3" id="checkbox-3" checked>
+									<label class="checkboxes__label" for="checkbox-3">Makita</label>
 								</li>
 								<li class="checkboxes__list-item">									
 									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox4" value="2" id="checkbox-4">
-									<label for="checkbox-4">Dewalt</label>
+									<label class="checkboxes__label" for="checkbox-4">Dewalt</label>
 								</li>
 								<li class="checkboxes__list-item">									
 									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox5" value="2" id="checkbox-5">
-									<label for="checkbox-5">Hitachi</label>
+									<label class="checkboxes__label" for="checkbox-5">Hitachi</label>
 								</li>
 							</ul>
 						</fieldset>	
 						<fieldset class="catalog-form__fieldset">
-							<legend>Питание:</legend>
+							<legend class="catalog-form__legend">Питание:</legend>
 							<ul class="radio-checkboxes">
 								<li class="radio-checkboxes__list-item">								
 									<input class="radio-checkboxes__item visually-hidden" type="radio" name="grid__item" value="1" id="radio-1" checked>
-									<label for="radio-1">Аккумуляторные</label>
+									<label  class="radio-checkboxes__label" for="radio-1">Аккумуляторные</label>
 								</li>
 								<li class="radio-checkboxes__list-item">									
-									<input class="radio-checkboxes__item visually-hidden" type="radio" name="grid__item" value="2" id="radio-2" disabled>
-									<label for="radio-2">Сетевые</label>
+									<input class="radio-checkboxes__item visually-hidden" type="radio" name="grid__item" value="2" id="radio-2">
+									<label  class="radio-checkboxes__label" for="radio-2">Сетевые</label>
 								</li>
 							</ul>
 						</fieldset>
@@ -129,7 +129,7 @@
 				</section>	
 				<section class="catalog">
 					<div class="control-panel">
-						<h2>Сортировка:</h2>
+						<h2 class="control-panel--header">Сортировка:</h2>
 						<ul class="control-panel__sort-items">
 							<li><a class="control-panel__item control-panel__item--checked">По цене</a></li>
 							<li><a href="#" class="control-panel__item">По типу</a></li>
@@ -253,20 +253,18 @@
 	<footer>
 		<div class="container container--head-footer">
 			<div class="header-footer">
-				<div class="logo">
-					<a href="index.html" class="logo"><img src="img/logo.png" alt="Логотип компании Техномарт"></a>
-				</div>
+					<a href="index.html" class="logo"><img src="img/svg/tech_logo.svg" alt="Логотип компании Техномарт"></a>
 				<ul class="navigation navigation--footer">
 					<li><a href="#" class="navigation__link">Компания</a></li>
 					<li><a href="#" class="navigation__link">Новости</a></li>
-					<li><a href="#" class="navigation__link">Каталог</a></li>					
+					<li><a href="catalog.html" class="navigation__link">Каталог</a></li>					
 					<li><a href="#" class="navigation__link">Доставка</a></li>
 					<li><a href="#" class="navigation__link">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="main-footer">
-				<address class="main-footer__adress">						
-					г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8<br><a href="tel:+78125550555">+7 (812) 555-05-55</a>
+				<address class="main-footer__address">						
+					г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8<br><a  class="main-footer__address__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
 				</address>
 				<ul class="navigation navigation--footer">
 					<li><a href="#" class="navigation__link navigation__link--footer">Материалы</a></li>
@@ -291,7 +289,7 @@
 	</footer>
 	<div class="cart">
 		<button class="btn-close" type="button" title="close">Закрыть</button>
-		<p>Товар добавлен в корзину!</p>
+		<p class="cart__text">Товар добавлен в корзину!</p>
 		<div class="cart__bottom">
 			<a href="#" class="btn">Оформить заказ</a>
 			<button class=" btn btn--close" type="button" title="close">Продолжить покупки</button>
