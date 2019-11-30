@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		<div class="bottom-header">
-			<div class="container container-column">			
+			<div class="container container--column">			
 				<div class="user-block">
 					<p class="user-block__text">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
 					<address class="user-block__address">
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 				<nav class="navigation">
-					<ul>
+					<ul class="navigation__list">
 						<li><a href="#" class="navigation__link">Главная</a></li>
 						<li><a href="#" class="navigation__link">Компания</a></li>
 						<li><a href="catalog.html" class="navigation__link">Каталог</a></li>
@@ -55,12 +55,12 @@
 		</div>
 	</header>
 	<main>
-		<div class="container">
+		<div class="container container--column">
 			<ul class="breadcrumbs">
 				<li><a href="index.html" class="breadcrumbs__link" aria-label="Ссылка на главную страницу"></a></li>
 				<li><a href="#" class="breadcrumbs__link">Каталог</a></li>
 				<li><a href="#" class="breadcrumbs__link">Инструмент</a></li>
-				<li><a class="breadcrumbs__link breadcrumbs__link--acrive">Перфораторы</a></li>
+				<li><a class="breadcrumbs__link breadcrumbs__link--active">Перфораторы</a></li>
 			</ul>
 			<h1  class="catalog-header">Перфораторы</h1>
 			<div class="form-container">
@@ -77,10 +77,11 @@
 									<button class="form-range__button" type="button" id="range-max"></button>
 								</div>
 							</div>
-							<p>
+							<p class="form-range__field">
 								<label aria-label="Минимальная цена товара в фильтре">		
 									<input class="form-range__number-field" type="number" value="0" id="range-field-min">
-								</label>				
+								</label>	
+								<span>-</span>
 								<label aria-label="Максимальная цена товара в фильтре">
 									<input class="form-range__number-field" type="number" value="30000" id="range-field-max">
 								</label>
@@ -138,7 +139,7 @@
 							<li><a href="#" class="control-panel__direction" aria-label="сортировка по убыванию"></a></li>
 						</ul>						
 					</div>
-					<div class="catalog-items">
+					<div class="catalog-container">
 						<ul class="catalog-items">
 							<li class="catalog-items__item shop-item">
 								<div class="shop-item__header">
@@ -260,19 +261,21 @@
 				</section>
 			</div>	
 		</div>
-		<section class="about-description">
-			<h2 class="catalog-header catalog-header--about">Пара слов о перфораторах</h2>
-			<p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-			 	бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
-				функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор 	&#171;трехрежимников&#187;: в 
-				одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-		</section>
+		<div class="container">
+			<section class="about-description">
+				<h2 class="catalog-header catalog-header--about">Пара слов о перфораторах</h2>
+				<p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+				 	бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
+					функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор 	&#171;трехрежимников&#187;: в 
+					одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+			</section>
+		</div>
 	</main>
 		<footer>
 		<div class="footer-background">
 			<div class="container container--column">
 				<div class="footer-top">
-					<a class="logo"><img src="img/svg/tech_logo.svg" alt="Логотип компании Техномарт"></a>
+					<a href="index.html" class="logo"><img src="img/svg/tech_logo.svg" alt="Логотип компании Техномарт"></a>
 					<ul class="navigation navigation--footer">
 						<li><a href="#" class="navigation-footer__link">Компания</a></li>
 						<li><a href="#" class="navigation-footer__link">Новости</a></li>
@@ -308,7 +311,7 @@
 		</div>
 	</footer>
 	<div class="cart">
-		<button class="btn-close" type="button" title="close">Закрыть</button>
+		<button class="btn-close" type="button" title="close"></button>
 		<p class="cart__text">Товар добавлен в корзину!</p>
 		<div class="cart__bottom">
 			<a href="#" class="btn">Оформить заказ</a>
