@@ -30,8 +30,7 @@ footer ul,
 .catalog-items,
 .catalog__pages,
 .checkboxes,
-.radio-checkboxes,
-.main-description__list {
+.radio-checkboxes {
 	list-style: none;
 }
 .main-header {
@@ -284,14 +283,20 @@ input[type="search"]:focus {
 	color: white;
 }
 .main-description__list {
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
-.main-description__item {
-	margin-right: 20px;
-	margin-bottom: 20px;
+.main-description__container {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+.main-description__container-bottom {
+	flex-direction: column;
+	padding-bottom: 0px;
 }
 .fast-description {	
 	padding:20px 20px 20px 22px;
@@ -303,10 +308,6 @@ input[type="search"]:focus {
 	padding: 0px;
 	width: 620px;
 	height: 265px;
-}
-.main-description__item:nth-of-type(3n),
-.main-description__item:nth-of-type(5) {
-	margin-right: 0px;
 }
 .fast-description__text{
 	margin: 0;
