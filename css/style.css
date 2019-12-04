@@ -60,6 +60,7 @@ margin-left: 0;
 	width: 20px;
 	height: 20px;
 	background: url("../img/svg/icon-cart.svg")no-repeat;
+	opacity: 0.3;
 }
 .main-header__link__mark:before {
 	position: absolute;
@@ -69,6 +70,7 @@ margin-left: 0;
 	width: 20px;
 	height: 20px;
 	background: url("../img/svg/icon-bookmark.svg")no-repeat;
+	opacity: 0.3;
 }
 .main-header__link--order {
 	margin-left: auto;
@@ -109,6 +111,7 @@ input[type="search"] {
 	width: 20px;
 	height: 20px;
 	background: url("../img/svg/icon-search.svg")no-repeat;
+	opacity: 0.3;
 }
 input[type="search"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
@@ -128,6 +131,9 @@ input[type="search"]:focus {
 	color: black;
 	background-color: white;
 	outline: none;
+}
+input[type="search"]:hover + .main-header__label::before {
+	opacity: 1;
 }
 .logo {
 	display: inline-block;
@@ -737,8 +743,8 @@ background-color: #5fbb2d;
 	height: 2px;
 }
 .contacts__map {
-	margin-top: 30px;
-	margin-bottom: 38px;
+	margin-top: 32px;
+	margin-bottom: 36px;
 }
 .navigation-footer__link,
 .main-footer__address {

@@ -13,13 +13,13 @@
 	<header>	
 		<div class="main-header">
 			<div class="container">
-				<a href="index.html" class="logo" aria-label="Ссылка на главную страницу"><img src="img/svg/tech_logo.svg" alt="Логотип компании Техномарт"></a>
+				<a href="index.html" class="logo logo--header"><img src="img/svg/tech_logo.svg" alt="Логотип компании Техномарт" width="109px" height="19px" class="logo__header-img"></a>
 				<form action="https://echo.htmlacademy.ru/" method="get" class="search">
-					<label for="search" class="visually-hidden">Поиск по сайту:</label>
-					<input  type="search" placeholder="Поиск:" id="search">				
+					<label for="search" class="main-header__label" aria-label="Поиск по сайту:"></label>
+					<input  type="search" placeholder="Поиск:" id="search" >				
 				</form>
-				<a href="#" class="main-header__link">Закладки:<span class="mark-value">0</span></a>
-				<a href="#" class="main-header__link">Корзина:<span class="cart-value">0</span></a>
+				<a href="#" class="main-header__link main-header__link__mark">Закладки:<span class="mark-value"> 0</span></a>
+				<a href="#" class="main-header__link main-header__link__cart">Корзина:<span class="cart-value"> 0</span></a>
 				<a href="#" class="main-header__link main-header__link--order">Оформить заказ</a>
 			</div>
 		</div>
@@ -275,7 +275,7 @@
 		<div class="footer-background">
 			<div class="container container--column">
 				<div class="footer-top">
-					<a href="index.html" class="logo" aria-label="Ссылка на главную страницу"><img src="img/svg/tech_logo.svg" alt="Логотип компании Техномарт"></a>
+					<a class="logo logo--footer"><img src="img/svg/tech_logo.svg" class="logo__footer-img" alt="Логотип компании Техномарт"></a>
 					<ul class="navigation navigation--footer">
 						<li><a href="#" class="navigation-footer__link">Компания</a></li>
 						<li><a href="#" class="navigation-footer__link">Новости</a></li>
@@ -286,13 +286,13 @@
 				</div>
 				<div class="main-footer">
 					<address class="main-footer__address">						
-						г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8<br><a  class="main-footer__address__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8 <a  class="main-footer__address__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
 					</address>
-					<ul class="navigation navigation--footer">
-						<li><a href="#" class="navigation-footer__link navigation-footer__link--second">Материалы</a></li>
-						<li><a href="#" class="navigation-footer__link navigation-footer__link--second">Техника</a></li>
-						<li><a href="#" class="navigation-footer__link navigation-footer__link--second">Инструмент</a></li>
-						<li><a href="#" class="navigation-footer__link navigation-footer__link--second">Спецпредложения</a></li>
+					<ul class="navigation navigation--footer-bottom">
+						<li class="main-footer__list-item"><a href="#" class="navigation-footer__link navigation-footer__link--second">Материалы</a></li>
+						<li class="main-footer__list-item"><a href="#" class="navigation-footer__link navigation-footer__link--second">Техника</a></li>
+						<li class="main-footer__list-item"><a href="#" class="navigation-footer__link navigation-footer__link--second">Инструмент</a></li>
+						<li class="main-footer__list-item"><a href="#" class="navigation-footer__link navigation-footer__link--second">Спецпредложения</a></li>
 					</ul>
 				</div>
 			</div>
@@ -300,13 +300,13 @@
 		<div class="footer-bottom">
 			<div class="container container--footer">			
 				<p class="copy">&#169; 2010-2019 Компания &#171;Техномарт&#187; Все права защищены</p>			
-				<ul class="social-media">
-					<li><a href="#" class="social-media__link" aria-label="Техномарт во Вконтакте"></a></li>
-					<li><a href="#" class="social-media__link" aria-label="Техномарт в facebook"></a></li>
-					<li><a href="#" class="social-media__link" aria-label="Техномарт в twitter"></a></li>
+				<ul class="footer-bottom__social social-media">
+					<li><a href="#" class="social-media__link social-media__link--vk" aria-label="Техномарт во Вконтакте"></a></li>
+					<li><a href="#" class="social-media__link social-media__link--fb" aria-label="Техномарт в facebook"></a></li>
+					<li><a href="#" class="social-media__link social-media__link--insta" aria-label="Техномарт в instagramm"></a></li>
 				</ul>
 					<p class="mailto-research">Обратная связь:<br><a href="mailto:mail@htmlacademy.ru" class="mailto-research__link">mail@htmlacademy.ru</a></p>
-					<p class="mailto-research">Разработано:<br><a href="https://htmlacademy.ru/intensive/htmlcss" class="mailto-research__link">htmlacademy.ru</a></p>
+					<p class="mailto-research">Разработано: -<br><a href="https://htmlacademy.ru/intensive/htmlcss" class="mailto-research__link">htmlacademy.ru</a></p>
 			</div>	
 		</div>
 	</footer>
