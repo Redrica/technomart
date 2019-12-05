@@ -13,10 +13,10 @@
 	<header>	
 		<div class="main-header">
 			<div class="container">
-				<a class="logo logo--header"><img src="img/svg/tech_logo.svg" alt="Логотип компании Техномарт" width="109px" height="19px" class="logo__header-img"></a>
+				<a class="logo logo--header logo--index"><img src="img/svg/tech_logo.svg" alt="Логотип компании Техномарт" width="109px" height="19px" class="logo__header-img"></a>
 				<form action="https://echo.htmlacademy.ru/" method="get" class="search">
 					<label for="search" class="main-header__label" aria-label="Поиск по сайту:"></label>
-					<input  type="search" placeholder="Поиск:" id="search" >				
+					<input  type="search" placeholder="Поиск:" id="search">				
 				</form>
 				<a href="#" class="main-header__link main-header__link__mark">Закладки:<span class="mark-value"> 0</span></a>
 				<a href="#" class="main-header__link main-header__link__cart">Корзина:<span class="cart-value"> 0</span></a>
@@ -107,7 +107,7 @@
 				<ul class="popular__catalog catalog-items">
 					<li class="catalog-items__item shop-item">
 						<div class="shop-item__header">
-							<img src="img/boschBFG9000.jpg" alt="перфоратор bosch модель BFG9000" width="218" height="170">
+							<img class="shop-item__img" src="img/boschBFG9000.jpg" alt="перфоратор bosch модель BFG9000" width="218" height="170">
 							<div class="shop-item__details">
 								<a href="#" class="btn btn--shop-item">Купить</a>
 								<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -119,7 +119,7 @@
 					</li>
 					<li class="catalog-items__item shop-item">
 						<div class="shop-item__header">
-							<img src="img/boschBFG2000.jpg" alt=" перфоратор bosch модель BFG3000" width="218" height="170">
+							<img class="shop-item__img" src="img/boschBFG2000.jpg" alt=" перфоратор bosch модель BFG3000" width="218" height="170">
 							<div class="shop-item__details">
 								<a href="#" class="btn btn--shop-item">Купить</a>
 								<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -131,7 +131,7 @@
 					</li>
 					<li class="catalog-items__item shop-item">
 						<div class="shop-item__header">
-							<img src="img/boschBFG6000.jpg" alt="перфоратор bosch модель BFG6000" width="218" height="170">
+							<img class="shop-item__img" src="img/boschBFG6000.jpg" alt="перфоратор bosch модель BFG6000" width="218" height="170">
 							<div class="shop-item__details">
 								<a href="#" class="btn btn--shop-item">Купить</a>
 								<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -143,7 +143,7 @@
 					</li>
 					<li class="catalog-items__item  shop-item">
 						<div class="shop-item__header label-new">
-							<img src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
+							<img class="shop-item__img" src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
 							<div class="shop-item__details">
 								<a href="#" class="btn btn--shop-item">Купить</a>
 								<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -244,7 +244,7 @@
 					<h2 class="contacts__main-title">Контакты</h2>
 					<p class="main-text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
 					<div class="contacts__map">
-						<a href="#"><img src="img/contacts-map.png" alt="Карта проезда в офис компании Техномарт" width="300" height="158"></a>
+						<a href="#" class="map-link"><img src="img/contacts-map.png" alt="Карта проезда в офис компании Техномарт" width="300" height="158"></a>
 					</div>
 					<a href="#" class="btn btn--contacts">Заблудились? Напишите нам!</a>
 				</section>
@@ -255,7 +255,7 @@
 		<div class="footer-background">
 			<div class="container container--column">
 				<div class="footer-top">
-					<a class="logo logo--footer"><img src="img/svg/tech_logo.svg" class="logo__footer-img" alt="Логотип компании Техномарт"></a>
+					<a class="logo logo--footer logo--index"><img src="img/svg/tech_logo.svg" class="logo__footer-img" alt="Логотип компании Техномарт"></a>
 					<ul class="navigation navigation--footer">
 						<li><a href="#" class="navigation-footer__link">Компания</a></li>
 						<li><a href="#" class="navigation-footer__link">Новости</a></li>
@@ -317,9 +317,10 @@
 	<section class="map">
 		<h2 class="visually-hidden">Карта проезда</h2>
 		<img src="img/contacts-map-full.png" class="full-map" alt="Полная карта проезда в компанию Техномарт по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8" width="940" height="446">
-		<button class="btn-close" type="button" title="close"></button>
+		<button class="btn-close btn-close--map" type="button" title="close"></button>
 	</section>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="js/script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

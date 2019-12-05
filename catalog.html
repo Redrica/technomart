@@ -19,7 +19,7 @@
 					<input  type="search" placeholder="Поиск:" id="search" >				
 				</form>
 				<a href="#" class="main-header__link main-header__link__mark">Закладки:<span class="mark-value"> 0</span></a>
-				<a href="#" class="main-header__link main-header__link__cart">Корзина:<span class="cart-value"> 0</span></a>
+				<a href="#" class="main-header__link main-header__link__cart main-header__link__cart--ordered">Корзина:<span class="cart-value"> 10</span></a>
 				<a href="#" class="main-header__link main-header__link--order">Оформить заказ</a>
 			</div>
 		</div>
@@ -29,14 +29,14 @@
 					<p class="user-block__text">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
 					<address class="user-block__address">
 						<a href="tel:+78125550555"  class="user-block__phone">
-						+7 (812) 555-05-55</a><br>
+						+7 (812) 555-05-55</a>
 						г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8
 					</address>
 					<div class="user-menu">
 						<a href="#" class="btn user-menu__sign-out" aria-label="Выход из аккаунта">Равшан Джамшутович</a>
-						<ul class="user-login">
-							<li><a href="#" class="user-login__link">Мои заказы</a></li>
-							<li><a href="#" class="user-login__link">Личный кабинет</a></li>
+						<ul class="user-menu__login user-login">
+							<li class="user-menu__list-style"><a href="#" class="user-login__link">Мои заказы</a></li>
+							<li class="user-menu__list-style"><a href="#" class="user-login__link">Личный кабинет</a></li>
 						</ul>
 					</div>
 				</div>
@@ -56,8 +56,8 @@
 	</header>
 	<main>
 		<div class="container container--column">
-			<ul class="breadcrumbs">
-				<li><a href="index.html" class="breadcrumbs__link" aria-label="Ссылка на главную страницу"></a></li>
+			<ul class="container__breadcrumbs breadcrumbs">
+				<li><a href="index.html" class="breadcrumbs__link breadcrumbs__link--index" aria-label="Ссылка на главную страницу"></a></li>
 				<li><a href="#" class="breadcrumbs__link">Каталог</a></li>
 				<li><a href="#" class="breadcrumbs__link">Инструмент</a></li>
 				<li><a class="breadcrumbs__link breadcrumbs__link--active">Перфораторы</a></li>
@@ -89,7 +89,7 @@
 						</fieldset>							
 						<fieldset class="catalog-form__fieldset">
 							<legend class="catalog-form__legend">Производители:</legend>
-							<ul class="checkboxes">
+							<ul class="catalog-form__checkboxes checkboxes">
 								<li class="checkboxes__list-item">									
 									<input class="checkboxes__item visually-hidden" type="checkbox" name="grid__item--checkbox1" value="1" id="checkbox-1" checked>
 									<label class="checkboxes__label" for="checkbox-1">Bosch</label>
@@ -114,7 +114,7 @@
 						</fieldset>	
 						<fieldset class="catalog-form__fieldset">
 							<legend class="catalog-form__legend">Питание:</legend>
-							<ul class="radio-checkboxes">
+							<ul class="catalog-form__checkboxes radio-checkboxes">
 								<li class="radio-checkboxes__list-item">								
 									<input class="radio-checkboxes__item visually-hidden" type="radio" name="grid__item" value="1" id="radio-1" checked>
 									<label  class="radio-checkboxes__label" for="radio-1">Аккумуляторные</label>
@@ -143,7 +143,7 @@
 						<ul class="catalog-items">
 							<li class="catalog-items__item shop-item">
 								<div class="shop-item__header">
-									<img src="img/boschBFG2000.jpg" alt=" перфоратор bosch модель BFG3000" width="218" height="170">
+									<img class="shop-item__img" src="img/boschBFG2000.jpg" alt=" перфоратор bosch модель BFG3000" width="218" height="170">
 									<div class="shop-item__details">
 										<a href="#" class="btn btn--shop-item">Купить</a>
 										<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -155,7 +155,7 @@
 							</li>
 							<li class="catalog-items__item shop-item">
 								<div class="shop-item__header">
-									<img src="img/boschBFG6000.jpg" alt="перфоратор bosch модель BFG6000" width="218" height="170">
+									<img class="shop-item__img" src="img/boschBFG6000.jpg" alt="перфоратор bosch модель BFG6000" width="218" height="170">
 									<div class="shop-item__details">
 										<a href="#" class="btn btn--shop-item">Купить</a>
 										<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -167,7 +167,7 @@
 							</li>
 							<li class="catalog-items__item  shop-item label-new">
 								<div class="shop-item__header">
-									<img src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
+									<img class="shop-item__img" src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
 									<div class="shop-item__details">
 										<a href="#" class="btn btn--shop-item">Купить</a>
 										<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -179,7 +179,7 @@
 							</li>
 							<li class="catalog-items__item shop-item">
 								<div class="shop-item__header">
-									<img src="img/boschBFG2000.jpg" alt=" перфоратор bosch модель BFG3000" width="218" height="170">
+									<img class="shop-item__img" src="img/boschBFG2000.jpg" alt=" перфоратор bosch модель BFG3000" width="218" height="170">
 									<div class="shop-item__details">
 										<a href="#" class="btn btn--shop-item">Купить</a>
 										<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -191,7 +191,7 @@
 							</li>
 							<li class="catalog-items__item shop-item">
 								<div class="shop-item__header">
-									<img src="img/boschBFG6000.jpg" alt="перфоратор bosch модель BFG6000" width="218" height="170">
+									<img class="shop-item__img" src="img/boschBFG6000.jpg" alt="перфоратор bosch модель BFG6000" width="218" height="170">
 									<div class="shop-item__details">
 										<a href="#" class="btn btn--shop-item">Купить</a>
 										<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -203,7 +203,7 @@
 							</li>
 							<li class="catalog-items__item  shop-item label-new">
 								<div class="shop-item__header">
-									<img src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
+									<img class="shop-item__img" src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
 									<div class="shop-item__details">
 										<a href="#" class="btn btn--shop-item">Купить</a>
 										<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -215,7 +215,7 @@
 							</li>
 							<li class="catalog-items__item shop-item">
 								<div class="shop-item__header">
-									<img src="img/boschBFG2000.jpg" alt=" перфоратор bosch модель BFG3000" width="218" height="170">
+									<img class="shop-item__img" src="img/boschBFG2000.jpg" alt=" перфоратор bosch модель BFG3000" width="218" height="170">
 									<div class="shop-item__details">
 										<a href="#" class="btn btn--shop-item">Купить</a>
 										<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -227,7 +227,7 @@
 							</li>
 							<li class="catalog-items__item shop-item">
 								<div class="shop-item__header">
-									<img src="img/boschBFG6000.jpg" alt="перфоратор bosch модель BFG6000" width="218" height="170">
+									<img class="shop-item__img" src="img/boschBFG6000.jpg" alt="перфоратор bosch модель BFG6000" width="218" height="170">
 									<div class="shop-item__details">
 										<a href="#" class="btn btn--shop-item">Купить</a>
 										<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -239,7 +239,7 @@
 							</li>
 							<li class="catalog-items__item  shop-item label-new">
 								<div class="shop-item__header">
-									<img src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
+									<img class="shop-item__img" src="img/boschBFG2000.jpg" alt="перфоратор bosch модель BFG2000" width="218" height="170">
 									<div class="shop-item__details">
 										<a href="#" class="btn btn--shop-item">Купить</a>
 										<button class="btn btn--empty" type="button" title="mark">В закладки</button>
@@ -275,7 +275,7 @@
 		<div class="footer-background">
 			<div class="container container--column">
 				<div class="footer-top">
-					<a class="logo logo--footer"><img src="img/svg/tech_logo.svg" class="logo__footer-img" alt="Логотип компании Техномарт"></a>
+					<a href="index.html" class="logo logo--footer"><img src="img/svg/tech_logo.svg" class="logo__footer-img" alt="Логотип компании Техномарт"></a>
 					<ul class="navigation navigation--footer">
 						<li><a href="#" class="navigation-footer__link">Компания</a></li>
 						<li><a href="#" class="navigation-footer__link">Новости</a></li>
@@ -311,14 +311,44 @@
 		</div>
 	</footer>
 	<div class="cart">
-		<button class="btn-close" type="button" title="close"></button>
+		<button class="btn-close btn-close--cart" type="button" title="close"></button>
 		<p class="cart__text">Товар добавлен в корзину!</p>
 		<div class="cart__bottom">
 			<a href="#" class="btn">Оформить заказ</a>
 			<button class=" btn btn--close" type="button" title="close">Продолжить покупки</button>
 		</div>
 	</div>
+	<section class="write-us">
+		<h2 class="visually-hidden">Написать нам</h2>
+		<button class="btn-close" type="button" title="close"></button>
+		<form action="https://echo.htmlacademy.ru/" method="post" class="write-us__form">
+			<div class="write-us--container">
+				<p>
+					<label class="write-us__lable">Ваше имя:<br>
+						<input type="text" class="write-us__input" name="login" placeholder="Имя Фамилия">
+					</label>
+				</p>
+				<p>
+					<label class="write-us__lable">Ваш e-mail:<br>
+						<input type="email" class="write-us__input" name="email" placeholder="email@example.com">	
+					</label>
+				</p>
+			</div>
+			<p>
+				<label class="write-us__lable">Текст письма:<br>
+					<textarea class="write-us__input write-us__input--textarea" name="comment" rows="5"  placeholder="В свободной форме"></textarea>
+				</label>
+			</p>
+			<button class="btn btn--submit" type="submit">Отправить</button>
+		</form>
+	</section>
+	<section class="map">
+		<h2 class="visually-hidden">Карта проезда</h2>
+		<img src="img/contacts-map-full.png" class="full-map" alt="Полная карта проезда в компанию Техномарт по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 18/8" width="940" height="446">
+		<button class="btn-close btn-close--map" type="button" title="close"></button>
+	</section>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="js/script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
