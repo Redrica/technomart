@@ -498,7 +498,7 @@ background-color: #5fbb2d;
 	background-color: #f9f5f0;
 }
 .popular--bottom {
-	margin-top: 0px;
+	margin-top: -16px;
 	margin-bottom: 46px;
 }
 .popular__catalog {
@@ -516,6 +516,7 @@ background-color: #5fbb2d;
 }
 .catalog-items__item {
 	margin-top: 4px;
+	margin-bottom: 16px;
 	width: 220px;
 	padding-bottom: 2px;
 	border: 1px solid #e5e5e5;
@@ -1068,7 +1069,7 @@ background-color: #ee3643;
 .form-filter__header,
 .control-panel__header {
 	margin: 0;
-	padding: 10px 18px;
+	padding: 0px 18px 0px 18px;
 }
 .form-filter__header,
 .control-panel__header {
@@ -1079,6 +1080,10 @@ background-color: #ee3643;
 	color: black;
 	background-color: #f7f3ec;
 	font-weight: 400;
+}
+.form-filter__header {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .form-range__number-field {
 	width: 90px;
@@ -1093,6 +1098,9 @@ background-color: #ee3643;
 }
 .catalog-header--about {
 	color: black;
+	padding-left: 0px;
+	padding-bottom: 0px;
+
 }
 .catalog-form__legend {
 	Font-family: "PT Sans", "Arial", sans-serif;	
@@ -1145,7 +1153,7 @@ background-color: #ee3643;
 }
 .btn--catalog {
 	margin-top: 40px;
-	padding: 10px 30px;
+	padding: 10px 38px;
 	Font-family: "PT Sans", "Arial", sans-serif;	
 	font-size: 13px;
 	line-height: 18px;
@@ -1164,8 +1172,11 @@ background-color: #ee3643;
 	border-color: #ee3643;
 }
 .btn--num {
-	padding: 12px 15px;
+	padding: 10px 14px 10px 15px;
 	margin-right: 10px;
+}
+.btn--pages {
+	padding: 10px 30px 10px 32px;
 }
 .catalog-form__fieldset {
 	margin: 0;
@@ -1184,21 +1195,27 @@ background-color: #ee3643;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #f7f3ec;
+	height: 38px;
 }
 .control-panel__sort-items {
 	margin: 0;
 	display: flex;
+	align-items: center;
 }
 .control-panel__item {
-	margin-left: 70px;
+	display: inline-block;
+	margin-left: 25px;
+	margin-right: 42px;
+	margin-bottom: 4px;
+	padding-bottom: 1px;
 	Font-family: "PT Sans", "Arial", sans-serif;	
 	font-size: 13px;
 	line-height: 13px;
 	color: black;
+	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 400;
-	text-decoration-style: dotted;
-	text-decoration-color: #ee3643;
+	border-bottom: 1px dotted #ee3643;
 	opacity: 0.3;
 }
 .btn__hide {
@@ -1206,29 +1223,51 @@ background-color: #ee3643;
 }
 .btn--disabled {
 	background-color: #ee3643;
+	color: white;
 }
 .btn--hide {
 	display: none;
 }
 .control-panel__direction {
-	margin-right: 12px;
-	margin-left: 12px;
-	border:3px solid rgba(0,0,0,0.3);
+	margin-right: 17px;
+	margin-left: 15px;
+	position: relative;
 }
-.control-panel__item:hover,
-.control-panel__direction:hover {
-	opacity: 1;
-	border-color: rgba(0,0,0,1);
+.control-panel__direction--up::after,
+.control-panel__direction--down::after {
+  content: ''; 
+  position: absolute;
+  right: 0; 
+  top: 4px; 
+  border: 5px solid transparent;
+  border-top: 10px solid #c1c1c1; 
+}
+.control-panel__direction:hover::after{
+	border: 5px solid transparent;
+  border-top: 10px solid #231f20;
+}
+.control-panel__direction__item--checked:hover::after,
+.control-panel__direction:active::after,
+.control-panel__direction__item--checked::after {
+	border: 5px solid transparent;
+  border-top: 10px solid #ee3643; 
+}
+.control-panel__direction--up::after {
+	transform: rotate(180deg);
+	top: -3px;
 }
 .control-panel__item:hover {
-	text-decoration-style: solid;
+	opacity: 1;
+	border-bottom-style: solid;
 }
 .control-panel__item:active,
-.control-panel__direction:active,
 .control-panel__item--checked {
 	color: #ee3643;
-	border-color: rgba(238, 54, 67, 1);
+	border: none;
 	opacity: 1;
+}
+.control-panel__item--checked:hover {
+	border: none;
 	text-decoration: none;
 }
 .about-description{
@@ -1236,10 +1275,13 @@ background-color: #ee3643;
 	font-size: 13px;
 	line-height: 24px;
 	color: black;
-	text-transform: none;
-	background-color: #f2f6f8;
+	text-transform: none;	
 	padding-top: 10px;
-	padding-bottom: 40px;
+	padding-bottom: 55px;
+}
+.container--about {
+	width: 100%;
+	background-color: #f2f6f8;
 }
 .cart__text {
 	Font-family: "Cuprum", "Arial", sans-serif;
@@ -1320,6 +1362,8 @@ background-color: #ee3643;
 .catalog__pages {
 	display: flex;
 	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 40px;
 	padding: 0;
 }
 .map {
