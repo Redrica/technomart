@@ -47,14 +47,14 @@ footer ul,
 	background-color: #293449;
 	text-decoration: none;
 }
-.main-header__link__cart {
+.main-header__link--cart {
 	padding: 13px 10px 12px 50px;
 	width: 150px;
 }
-.main-header__link__cart--ordered {
+.main-header__link--cart--ordered {
 	background-color: #ee3643;
 }
-.main-header__link__cart:before {
+.main-header__link--cart:before {
 	position: absolute;
 	content: "";
 	left: 18px;
@@ -64,11 +64,11 @@ footer ul,
 	background: url("../img/svg/icon-cart.svg")no-repeat;
 	opacity: 0.3;
 }
-.main-header__link__mark {
+.main-header__link--mark {
 	margin-left: auto;
 	width: 150px;
 }
-.main-header__link__mark::before {
+.main-header__link--mark::before {
 	position: absolute;
 	content: "";
 	left: 19px;
