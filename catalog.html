@@ -15,11 +15,11 @@
 			<div class="container">
 				<a href="index.html" class="logo logo--header"><img src="img/svg/tech_logo.svg" alt="Логотип компании Техномарт" width="109px" height="19px" class="logo__header-img"></a>
 				<form action="https://echo.htmlacademy.ru/" method="get" class="search">
-					<label for="search" class="main-header__label" aria-label="Поиск по сайту:"></label>
-					<input  type="search" placeholder="Поиск:" id="search" class="dds">				
+					<input  type="search" placeholder="Поиск:" id="search" class="search__input">		
+					<label for="search" class="main-header__label" aria-label="Поиск по сайту:"></label>		
 				</form>
 				<a href="#" class="main-header__link main-header__link--mark">Закладки:<span class="mark-value"> 0</span></a>
-				<a href="#" class="main-header__link main-header__link--cart main-header__link__cart--ordered">Корзина:<span class="cart-value"> 10</span></a>
+				<a href="#" class="main-header__link main-header__link--cart main-header__link--cart-ordered">Корзина:<span class="cart-value"> 10</span></a>
 				<a href="#" class="main-header__link main-header__link--order">Оформить заказ</a>
 			</div>
 		</div>
@@ -312,14 +312,14 @@
 			</div>	
 		</div>
 	</footer>
-	<div class="cart">
+	<section class="cart">
 		<button class="btn-close btn-close--cart" type="button" title="close"></button>
 		<p class="cart__text">Товар добавлен в корзину!</p>
 		<div class="cart__bottom">
-			<a href="#" class="btn">Оформить заказ</a>
+			<a href="#" class="btn btn--cart">Оформить заказ</a>
 			<button class=" btn btn--close" type="button" title="close">Продолжить покупки</button>
 		</div>
-	</div>
+	</section>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<script src="js/script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

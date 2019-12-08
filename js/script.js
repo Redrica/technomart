@@ -10,6 +10,18 @@ var mapLink = document.querySelector(".map-link");
 var map = document.querySelector(".map");
 var buy = document.querySelector(".btn--shop-item");
 var cart = document.querySelector(".cart");
+var desSlider =document.querySelector(".description--slider") ;
+
+if (desSlider) {
+	let sliderButtons = document.querySelectorAll(".description-slider__btn");
+	for (let sliderButton of sliderButtons) {
+  	sliderButton.addEventListener("click", function(event) {
+  		if (!sliderButton.disabled) {
+  			sliderButton.disabled = true;
+  		}
+  	});
+  }
+}
 
 if (link) {
 	link.addEventListener("click", function(event) {
@@ -26,7 +38,7 @@ if (mapLink) {
 //При нажатии крестика закрывается окно
 let closes = document.querySelectorAll(".btn-close");
 for (let btnClose of closes) {
-  btnClose.onclick = function(event) {
+  btnClose.addEventListener("click", function(event) {
 
 	if (popup) {
 		if (popup.classList.contains("popup--show")) {
@@ -47,7 +59,7 @@ for (let btnClose of closes) {
 				cart.classList.remove("popup--show");
 			}
 		}
-	}
+	})
 }
 //При нажатии сабмит срабатывает ошибка
 if (form) {
@@ -81,12 +93,12 @@ if (form) {
 
 let buys = document.querySelectorAll(".btn--shop-item");
 for (let btnShop of buys) {
-  btnShop.onclick = function(event) {
+  btnShop.addEventListener("click", function(event) {
 		if (buy) {
 			event.preventDefault();
 			cart.classList.add("popup--show");
 		}
-  }
+  })
 }
 if (cart) {
 	close.addEventListener("click", function(event) {
