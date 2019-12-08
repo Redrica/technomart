@@ -765,6 +765,9 @@ background-color: #5fbb2d;
 	border-bottom: 1px solid #293449;
 	border-top: 1px solid #405069;
 }
+.slider-buttons__item--third {
+	border-bottom: none;
+}
 .slider-buttons__list-item:first-of-type .slider-buttons__item{
 	border-top: none;
 }
@@ -788,6 +791,9 @@ background-color: #5fbb2d;
 .container__about {
 	margin-top: 55px;
 	margin-bottom: 85px;
+}
+.btn--credit {
+	margin-top: 10px;
 }
 .about {
 	width: 100%;

@@ -14,6 +14,49 @@ var desSliderLeft = document.querySelector(".description-slider__btn--left");
 var desSliderRight = document.querySelector(".description-slider__btn--right");
 var slideFirst = document.querySelector(".description-slider__slide--first");
 var slideSecond = document.querySelector(".description-slider__slide--second");
+var delivery = document.querySelector(".slider-buttons__item--first");
+var garantee = document.querySelector(".slider-buttons__item--second");
+var credit = document.querySelector(".slider-buttons__item--third");
+var deliveryDescription = document.querySelector(".slider-item__first");
+var garanteeDescription = document.querySelector(".slider-item__second");
+var creditDescription = document.querySelector(".slider-item__third");
+
+if (delivery) {
+	delivery.addEventListener("click", function(event) {
+		if (delivery.disabled == false) {
+			delivery.disabled = true;
+			garantee.disabled = false;
+			credit.disabled = false;
+			deliveryDescription.classList.remove("visually-hidden");
+			garanteeDescription.classList.add("visually-hidden");
+			creditDescription.classList.add("visually-hidden");
+		}
+	})
+}
+if (garantee) {
+	garantee.addEventListener("click", function(event) {
+		if (garantee.disabled == false) {
+			garantee.disabled = true;
+			delivery.disabled = false;
+			credit.disabled = false;
+			deliveryDescription.classList.add("visually-hidden");
+			garanteeDescription.classList.remove("visually-hidden");
+			creditDescription.classList.add("visually-hidden");
+		}
+	})
+}
+if (credit) {
+	credit.addEventListener("click", function(event) {
+		if (credit.disabled == false) {
+			credit.disabled = true;
+			delivery.disabled = false;
+			garantee.disabled = false;
+			deliveryDescription.classList.add("visually-hidden");
+			garanteeDescription.classList.add("visually-hidden");
+			creditDescription.classList.remove("visually-hidden");
+		}
+	})
+}
 
 if (desSliderRight) {
 	
