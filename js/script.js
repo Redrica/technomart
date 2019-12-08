@@ -10,17 +10,31 @@ var mapLink = document.querySelector(".map-link");
 var map = document.querySelector(".map");
 var buy = document.querySelector(".btn--shop-item");
 var cart = document.querySelector(".cart");
-var desSlider =document.querySelector(".description--slider") ;
+var desSliderLeft = document.querySelector(".description-slider__btn--left");
+var desSliderRight = document.querySelector(".description-slider__btn--right");
+var slideFirst = document.querySelector(".description-slider__slide--first");
+var slideSecond = document.querySelector(".description-slider__slide--second");
 
-if (desSlider) {
-	let sliderButtons = document.querySelectorAll(".description-slider__btn");
-	for (let sliderButton of sliderButtons) {
-  	sliderButton.addEventListener("click", function(event) {
-  		if (!sliderButton.disabled) {
-  			sliderButton.disabled = true;
-  		}
-  	});
-  }
+if (desSliderRight) {
+	
+	  desSliderRight.addEventListener("click", function(event) {
+	  if (!desSliderRight.disabled) {  		
+  		desSliderRight.disabled = true;
+  		desSliderLeft.disabled = false;  
+  		slideFirst.classList.remove("visually-hidden");
+  		slideSecond.classList.add("visually-hidden");
+  	}
+  });
+}
+if (desSliderLeft) {	
+	  desSliderLeft.addEventListener("click", function(event) {  		
+	  	if (!desSliderLeft.disabled) {
+  		desSliderLeft.disabled = true;
+  		desSliderRight.disabled = false;  	
+  		slideSecond.classList.remove("visually-hidden");
+  		slideFirst.classList.add("visually-hidden");
+ 		}
+  });
 }
 
 if (link) {
@@ -39,7 +53,6 @@ if (mapLink) {
 let closes = document.querySelectorAll(".btn-close");
 for (let btnClose of closes) {
   btnClose.addEventListener("click", function(event) {
-
 	if (popup) {
 		if (popup.classList.contains("popup--show")) {
 			event.preventDefault();

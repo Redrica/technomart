@@ -308,7 +308,12 @@ opacity: 0.5;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding: 23px 23px 22px 24px;
+	padding: 23px 23px 22px 24px;	
+}
+.description-slider__slide--first {
+background: url("../img/slider-img1.jpg") no-repeat black;
+}
+.description-slider__slide--second {
 	background: url("../img/slider-img2.jpg") no-repeat black;
 }
 .main-description {
